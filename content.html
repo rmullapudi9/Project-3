@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="content.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Space+Mono&display=swap" rel="stylesheet">
+    <title>Horizontally Split Screen</title>
+</head>
+
+<body>
+    <div class="line"></div>
+    <div class="split-container">
+        <div class="top-content">
+            <div class="instruction">
+                <div class="title">CARE INSTRUCTION 1</div>
+                <div class="care">HAND WASH ONLY</div>
+            </div>
+
+            <div class="instruction">
+                <div class="title">CARE INSTRUCTION 2</div>
+                <div class="care">AIR DRY ONLY</div>
+            </div>
+
+            <div class="instruction">
+                <div class="title">CARE INSTRUCTION 3</div>
+                <div class="care">AVOID EXTREME HEAT</div>
+            </div>
+
+            <div class="instruction">
+                <div class="stretch"><img src="images/page 5/img-33.png" id="library"></div>
+            </div>
+
+            <div class="instruction">
+                <div class="neck">
+                    <div class="subimage"><img src="images/page 6/img-35.png" alt=""></div>
+                    <div class="subimage" id="arrow"><img src="images/page 6/img-36.png" alt=""></div>
+                    <div class="subimage" id="draggable-1" z-index="2"><img id="draggable-1" src="images/page 6/img-40.png" ondragstart="drag(event)"></div> 
+                    <div class="subimage" id="arrow"><img src="images/page 6/img-36.png" alt=""></div>
+                    <div class="subimage"><img src="images/page 6/img-39.png" alt=""></div>
+                </div>
+
+            </div>
+
+            <div class="instruction">
+                <div class="image">IMAGE HERE</div>
+            </div>
+        </div>
+
+
+        <div class="bottom-content">
+
+            <div class="instruction">
+
+                <!-- <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="your-image-source.jpg" alt="Sample Image">
+                        <div class="text-overlay">Hover Text</div>
+                    </div> -->
+
+            </div>
+
+            <div class="instruction">
+                <div class="bands">
+
+                    <div class="marq">
+                        <marquee direction="right" Scrollamount=20><img src="images/page 3/img-12.png" alt=""></marquee>
+                        <marquee Scrollamount=25><img src="images/page 3/img-13.png" alt=""></marquee>
+                        <marquee direction="right" Scrollamount=30><img src="images/page 3/img-14.png" alt=""></marquee>
+                        <marquee Scrollamount=18><img src="images/page 3/img-15.png" alt=""></marquee>
+                    </div>
+
+                    <div class="subimage"><img src="images/page 3/img-47.png" alt=""></div>
+                    <div class="subimage"></div>
+                    <div class="subimage"><img src="images/page 3/img-49.png" alt=""></div>
+                    <div class="subimage"></div>
+                    <div class="subimage"></div>
+                    <div class="subimage"><img src="images/page 3/img-48.png" alt=""></div>
+                    <div class="subimage"></div>
+                    <div class="subimage"><img src="images/page 3/img-50.png" alt=""></div>
+
+                </div>
+
+
+            </div>
+
+            <div class="instruction">
+                <div class="heat">
+                    <div class="subimage"><img src="images/page 4/img-51.png" alt=""></div>
+                    <div class="subimage"><img src="images/page 4/img-52.png" alt=""></div>
+                    <div class="subimage"><img src="images/page 4/img-53.png" alt=""></div>
+                    <div class="subimage"><img src="images/page 4/img-54.png" alt=""></div>
+                    <div class="subimage"><img src="images/page 4/img-55.png" alt=""></div>
+                </div>
+
+
+
+            </div>
+
+            <div class="instruction">
+                <div class="use">HOLD WITH BOTH HANDS AND STRETCH SLIGHTLY</div>
+                <div class="text">Begin by holding the Fluffyband with both hands and giving it a gentle stretch to prepare it for wearing.</div>
+                <br>
+                <div class="title">USE INSTRUCTION 1</div>
+            </div>
+
+            <div class="instruction">
+                <div class="use">PLACE IT AROUND YOUR NECK</div>
+                <div class="text">Place the Fluffyband over your head and let it rest around the back of your neck. Ensure ears are facing the front. If you have long hair, pull hair out from beneath the band.</div>
+                <br>
+                <div class="title">USE INSTRUCTION 2</div>
+            </div>
+
+            <div class="instruction">
+                <div class="use">PULL UP THE FRONT SIDE WITH EARS TO YOUR HAIRLINE</div>
+                <div class="text">Lift the front side of the Fluffyband with ears up to your hairline. This will keep your hair off your face. Adjust for comfort.</div>
+                <br>
+                <div class="title">USE INSTRUCTION 3</div>
+            </div>
+
+
+
+        </div>
+
+        </div>
+    </div>
+
+
+                <!--Link to jQuery UI CSS-->
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+		<!--Link to jQuery UI libraries-->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    
+    <script>
+        
+        $( function() {
+    	$("#draggable-1").draggable();
+        
+        $("#droppable-1").droppable({
+    		drop: function(event, ui){
+    			$(this)
+    			.addClass("dropped")
+    			.find("p")
+    			.html("Correct!");
+    		}             
+  	});
+});     
+        
+ </script>   
+
+
+</body>
+
+</html>

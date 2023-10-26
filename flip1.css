@@ -1,0 +1,151 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  Width:100vw;
+  padding: 0;
+  margin: 0;
+  flex-direction: column; 
+}
+
+.flip-container {
+  perspective: 1000px;
+  position: relative;
+  z-index: 1; 
+}
+
+.flipper {
+    width: 100vw;
+    height: 50vh;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+
+.flip-container:hover .flipper {
+  transform: rotateX(180deg);
+}
+
+
+.front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .middle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: #27ae60;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(180deg);
+  }
+  
+  .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: #e74c3c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+
+
+  *{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  Width:100vw;
+  padding: 0;
+  margin: 0;
+  flex-direction: column; 
+}
+
+.flip-container {
+  perspective: 1000px;
+  position: relative;
+  z-index: 1;
+  transform: rotateX(0deg); /* Start with 0 degrees rotation */
+}
+
+.flipper {
+    width: 100vw;
+    height: 50vh;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform: rotateX(0deg); /* Start with 0 degrees rotation */
+}
+
+
+
+/* Apply rotation to .flipped class instead of hover */
+.flip-container.flipped .flipper {
+  transform: rotateX(180deg);
+}
+
+.front, .middle, .back {
+
+}
+
+.front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: #3498db;
+  color: white;
+}
+
+.middle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: #27ae60;
+  color: white;
+  transform: rotateX(180deg);
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: #e74c3c;
+  color: white;
+}

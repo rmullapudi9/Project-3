@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+}
+
+.container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.nav{ 
+    grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;       
+    background-color: aqua;
+}
+
+.cover{
+    grid-row: 2 / 6;
+    grid-column: 3 / 80;
+    background-color: red;
+    
+}
+.titleimage { 
+
+    z-index: 2;
+
+}
+
+.content { 
+    background-color: aquamarine;
+
+    z-index: 2;
+}
