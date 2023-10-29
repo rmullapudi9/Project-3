@@ -5,102 +5,636 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
     <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+  
 </head>
 <body>
     <div class="pattern"></div>
+
+    <!-- Previous Button -->
+
+    <div class="spiral">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+
+        <div class=space></div>
+
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+
     <!-- Previous Button -->
     <button id="prev-btn">
         <i class="fas fa-arrow-circle-left"></i>
     </button>
 
-
     <!-- Book -->
-    <div id="book" class="book">
-        <!-- Paper 1 -->
-        <div id="p1" class="paper">
-            <div class="front">
-                <div id="f1" class="front-content">
-                    <h1>Front 1</h1>
+     <div id="book" class="book">
+            <!-- Paper 1 -->
+            <div id="p1" class="paper">
+                <div class="front">
+                    <div id="f1" class="front-content">
+                        <div class="nav-front">
+                            <div class="dots">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+
+
+                            <ul>
+                                <li> <a href="#">NAVIGATION</a>
+                                    <ul class="dropdown">
+                                        <li><a href="https://www.google.com/">FLUFFYBAND</a> </li>
+                                        <li><a href="https://www.google.com/">CARE</a></li> 
+                                        <li><a href="https://www.google.com/">USE</a></li> 
+                                        <li><a href="https://www.google.com/">FORMULA</a></li> 
+                                        <li><a href="https://www.google.com/">COLOPHON</a></li> 
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                            <div class="dots">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+
+                        <div class="cover">
+                            <div class="cover-body">
+                                <div class="heading"> USER MANUAL </div>
+                                <br>
+                                This webzine is your guide to using the versatile Fluffybands with Ears! Whether you need to keep your hair off your face during skincare routines, work, sleep, or play, this manual will show you how.
+                            </div>
+                            <div class="cover-img">
+                                <img src="images/page 1/img-01.png" alt="">
+                            </div>
+                            <div class="cover-title">
+                                <img src="images/page 1/img-02.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b1" class="back-content">
+
+                        <div class="care">
+                            <div class="instruction"> CARE INSTRUCTION 1</div>
+                            <div class="care-body"> HAND WASH ONLY </div>
+                        </div>
+
+                        <div class="nav-front">
+                            <div class="dots">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+
+                            <ul> </ul>
+
+                            <div class="dots">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="back">
-                <div id="b1" class="back-content">
-                    <h1>Back 1</h1>
+
+            <!-- Paper 2 -->
+            <div id="p2" class="paper">
+                <div class="front">
+                    <div id="f2" class="front-content">
+
+                        <div class="nav-front">
+                            <div class="dots">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+
+
+                            <ul>
+                                <li> <a href="#">NAVIGATION</a>
+                                    <ul class="dropdown">
+                                        <li><a href="https://www.google.com/">FLUFFYBAND</a> </li>
+                                        <li><a href="https://www.google.com/">CARE</a></li> 
+                                        <li><a href="https://www.google.com/">USE</a></li> 
+                                        <li><a href="https://www.google.com/">FORMULA</a></li> 
+                                        <li><a href="https://www.google.com/">COLOPHON</a></li> 
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                            <div class="dots">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b2" class="back-content">
+
+                        <div class="care">
+                            <div class="instruction"> CARE INSTRUCTION 2 </div>
+                            <div class="care-body"> AIR DRY ONLY </div>
+                        </div>
+
+                        <div class="nav-front">
+                            <div class="dots">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+
+                            <ul> </ul>
+
+                            <div class="dots">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Paper 2 -->
-        <div id="p2" class="paper">
-            <div class="front">
-                <div id="f2" class="front-content">
-                    <h1>Front 2</h1>
+
+            <!-- Paper 3 -->
+            <div id="p3" class="paper">
+                <div class="front">
+                    <div id="f3" class="front-content">
+
+                        <div class="nav-front">
+                            <div class="dots">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+
+
+                            <ul>
+                                <li> <a href="#">NAVIGATION</a>
+                                    <ul class="dropdown">
+                                        <li><a href="https://www.google.com/">FLUFFYBAND</a> </li>
+                                        <li><a href="https://www.google.com/">CARE</a></li> 
+                                        <li><a href="https://www.google.com/">USE</a></li> 
+                                        <li><a href="https://www.google.com/">FORMULA</a></li> 
+                                        <li><a href="https://www.google.com/">COLOPHON</a></li> 
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                            <div class="dots">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b3" class="back-content">
+
+                        <div class="care">
+                            <div class="instruction"> CARE INSTRUCTION 3 </div>
+                            <div class="care-body"> AVOID EXTREME HEAT </div>
+                        </div>
+
+                        <div class="nav-front">
+                            <div class="dots">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+
+                            <ul> </ul>
+
+                            <div class="dots">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="back">
-                <div id="b2" class="back-content">
-                    <h1>Back 2</h1>
-                </div>
-            </div>
-        </div>
-        <!-- Paper 3 -->
-        <div id="p3" class="paper">
-            <div class="front">
-                <div id="f3" class="front-content">
-                    <h1>Front 3</h1>
-                </div>
-            </div>
-            <div class="back">
-                <div id="b3" class="back-content">
-                    <h1>Back 3</h1>
-                </div>
-            </div>
-        </div>
 
             <!-- Paper 4 -->
-    <div id="p4" class="paper">
+        <div id="p4" class="paper">
+            <div class="front">
+                <div id="f4" class="front-content">
+
+                    <div class="nav-front">
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+
+
+                        <ul>
+                            <li> <a href="#">NAVIGATION</a>
+                                <ul class="dropdown">
+                                    <li><a href="https://www.google.com/">FLUFFYBAND</a> </li>
+                                    <li><a href="https://www.google.com/">CARE</a></li> 
+                                    <li><a href="https://www.google.com/">USE</a></li> 
+                                    <li><a href="https://www.google.com/">FORMULA</a></li> 
+                                    <li><a href="https://www.google.com/">COLOPHON</a></li> 
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="back">
+                <div id="b4" class="back-content">
+
+                    <div class="nav-front">
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+
+                        <ul> </ul>
+
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+            <!-- Paper 5 -->
+        <div id="p5" class="paper">
+            <div class="front">
+                <div id="f5" class="front-content">
+
+                    <div class="nav-front">
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+
+
+                        <ul>
+                            <li> <a href="#">NAVIGATION</a>
+                                <ul class="dropdown">
+                                    <li><a href="https://www.google.com/">FLUFFYBAND</a> </li>
+                                    <li><a href="https://www.google.com/">CARE</a></li> 
+                                    <li><a href="https://www.google.com/">USE</a></li> 
+                                    <li><a href="https://www.google.com/">FORMULA</a></li> 
+                                    <li><a href="https://www.google.com/">COLOPHON</a></li> 
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="use">
+                        <div class="instruction"> USE INSTRUCTION 1 </div>
+                        <div class="use-head"> HOLD WITH BOTH HANDS AND STRETCH SLIGHTLY </div>
+                        <div class="use-body"> Begin by holding the Fluffyband with both hands and giving it a gentle stretch to prepare it for wearing. </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="back">
+                <div id="b5" class="back-content">
+
+                    <div class="nav-front">
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+
+                        <ul> </ul>
+
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+        <!-- Paper 6 -->
+        <div id="p6" class="paper">
+            <div class="front">
+                <div id="f6" class="front-content">
+
+                    <div class="nav-front">
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+
+
+                        <ul>
+                            <li> <a href="#">NAVIGATION</a>
+                                <ul class="dropdown">
+                                    <li><a href="https://www.google.com/">FLUFFYBAND</a> </li>
+                                    <li><a href="https://www.google.com/">CARE</a></li> 
+                                    <li><a href="https://www.google.com/">USE</a></li> 
+                                    <li><a href="https://www.google.com/">FORMULA</a></li> 
+                                    <li><a href="https://www.google.com/">COLOPHON</a></li> 
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="use">
+                        <div class="instruction"> USE INSTRUCTION 2 </div>
+                        <div class="use-head"> PLACE IT AROUND YOUR NECK </div>
+                        <div class="use-body"> Place the Fluffyband over your head and let it rest around the back of your neck. Ensure ears are facing the front. If you have long hair, pull hair out from beneath the band. </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="back">
+                <div id="b6" class="back-content">
+
+                    <div class="nav-front">
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+
+                        <ul> </ul>
+
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+         <!-- Paper 7 -->
+         <div id="p7" class="paper">
+            <div class="front">
+                <div id="f7" class="front-content">
+                    <div class="nav-front">
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+
+
+                        <ul>
+                            <li> <a href="#">NAVIGATION</a>
+                                <ul class="dropdown">
+                                    <li><a href="https://www.google.com/">FLUFFYBAND</a> </li>
+                                    <li><a href="https://www.google.com/">CARE</a></li> 
+                                    <li><a href="https://www.google.com/">USE</a></li> 
+                                    <li><a href="https://www.google.com/">FORMULA</a></li> 
+                                    <li><a href="https://www.google.com/">COLOPHON</a></li> 
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="use">
+                        <div class="instruction"> USE INSTRUCTION 3 </div>
+                        <div class="use-head"> PULL UP THE FRONT SIDE WITH EARS TO YOUR HAIRLINE </div>
+                        <div class="use-body"> Lift the front side of the Fluffyband with ears up to your hairline. This will keep your hair off your face. Adjust for comfort. </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="back">
+                <div id="b7" class="back-content">
+                    <div class="nav-front">
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+
+                        <ul> </ul>
+
+                        <div class="dots">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    <!-- Paper 8 -->
+    <div id="p8" class="paper">
         <div class="front">
-            <div id="f4" class="front-content">
-                <h1>Front 4</h1>
+            <div id="f8" class="front-content">
+                <div class="nav-front">
+                    <div class="dots">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+
+
+                    <ul>
+                        <li> <a href="#">NAVIGATION</a>
+                            <ul class="dropdown">
+                                <li><a href="https://www.google.com/">FLUFFYBAND</a> </li>
+                                <li><a href="https://www.google.com/">CARE</a></li> 
+                                <li><a href="https://www.google.com/">USE</a></li> 
+                                <li><a href="https://www.google.com/">FORMULA</a></li> 
+                                <li><a href="https://www.google.com/">COLOPHON</a></li> 
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <div class="dots">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="formula">
+                    <div class="formula-head"> [Fluffyband x QUICK, DRAW!] Formula Sheet  </div>
+                    <div class="formula-body"> Fluffyband = Band [circle or donut or moon or rainbow] + Ears [triangles or cloud or bush] </div>
+                    <div class="formula-col">
+                    <div class="formula-use"> 
+                        USE INSTRUCTIONS<br> <br>
+                        Stretch Slightly with Both Hands = [hands or arm] + Fluffyband + Arrows [line + triangle] <br><br>
+                        Place around your Neck = Fluffyband + mona lisa <br><br>
+                        Pull up to Hairline = Fluffyband + [mona lisa or face] </div>
+                    <div class="formula-care"> 
+                        CARE INSTRUCTIONS<br> <br>
+                        Hand Wash Only = hand + clouds + circles <br><br>
+                        Air Dry = animal migrations + ocean <br><br>
+                        Avoid Extreme Heat = campfire + candle + sun </div>
+                    </div>
+                    <div class="formula-footer"> All illustrations in this webzine were collected  from Google’s Quick, Draw!, the world’s largest doodling data set, and manipulated to fit the narrative. </div>
+
+
+                </div>
+
             </div>
         </div>
         <div class="back">
-            <div id="b4" class="back-content">
-                <h1>Back 4</h1>
-            </div>
-        </div>
-    </div>
-    <!-- Paper 5 -->
-    <div id="p5" class="paper">
-        <div class="front">
-            <div id="f5" class="front-content">
-                <h1>Front 5</h1>
-            </div>
-        </div>
-        <div class="back">
-            <div id="b5" class="back-content">
-                <h1>Back 5</h1>
-            </div>
-        </div>
-    </div>
-    <!-- Paper 6 -->
-    <div id="p6" class="paper">
-        <div class="front">
-            <div id="f6" class="front-content">
-                <h1>Front 6</h1>
-            </div>
-        </div>
-        <div class="back">
-            <div id="b6" class="back-content">
-                <h1>Back 6</h1>
+            <div id="b8" class="back-content">
+                <div class="nav-front">
+                    <div class="dots">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+
+                    <ul> </ul>
+
+                    <div class="dots">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
-    </div>
+</div>
 
+        </div>
 
     <!-- Next Button -->
     <button id="next-btn">

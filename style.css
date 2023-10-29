@@ -63,20 +63,28 @@ body {
     border-top: 1px solid black;
 }
 
+
 .back {
     z-index: 0;
 }
 
-.front-content,
-.back-content {
+.front-content{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
+.front-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .back-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     transform: rotateX(170deg)
 }
 
@@ -110,28 +118,37 @@ i {
 
 /* Paper stack order */
 #p1 {
-    z-index: 6;
+    z-index: 8;
 }
 
 #p2 {
-    z-index: 5;
+    z-index: 7;
 }
 
 #p3 {
-    z-index: 4;
+    z-index: 6;
 }
 
 #p4 {
-    z-index: 3;
+    z-index: 5;
 }
 
 #p5 {
-    z-index: 2;
+    z-index: 4;
 }
 
 #p6 {
+    z-index: 3;
+}
+
+#p7 {
+    z-index: 2;
+}
+
+#p8 {
     z-index: 1;
 }
+
 
 
 @media screen and (max-width: 768px) {
@@ -140,18 +157,250 @@ i {
         background-color: #f2f2f2;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     #book {
         order:1;
+        width: 80%;
+        height: 30%;
     }
 
-    #prev-btn {
-        order:2;
+      button {
+        order: 3;
+
     }
 
-    #nxt-btn {
-        order:3;
       }
 
+
+      .nav-front{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
       }
+
+      .dots {
+        width: 200px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 80px;
+
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #757575;
+        margin: 5px;
+    }
+
+
+    ul {
+        list-style: none;
+        background-color: lightgray;
+        width: 13vw;
+        margin:0;
+        padding:0;
+
+    }
+
+    ul li{
+        display: block;
+        position: relative;
+        width: 13vw;
+
+    }
+
+    ul li a {
+        display: block;
+        padding: 20px 20px;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Space Mono', monospace;  
+        letter-spacing: 6px;
+    }
+
+    ul li ul.dropdown li{
+        display: block;
+    }
+
+    ul li ul.dropdown {
+        width:13vw;
+        background: #E0FF72;
+        text-align: center; 
+        position: absolute;
+        z-index: 999;
+        display:none;
+    }
+
+    ul li a:hover {
+        background-color: #DC67FF;
+        color: #7000FF;
+    }
+
+    ul li:hover ul.dropdown {
+        display: block;
+        /* background-color: #E0FF72;   NAVIGATION BG SHOULD BE LIME GREEN */ 
+    }
+
+
+    .spiral {
+        position:fixed;
+        width: 800px;
+        padding: 5px;
+        display: flex;
+        flex-direction:row ;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+    }
+
+    .bar {
+        width: 12px; 
+        height: 55px;  
+        background-color: yellow; 
+        border-radius: 50px; 
+        margin: 10px 9px 0;
+    }
+    
+    .space{
+        margin: 0 203px;
+    }
+
+    .cover{
+        width: 950px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cover-body{
+        width: 16vw;
+        height: 30vh;
+        font-family: 'Space Mono', monospace;   
+        font-size: 12px;
+        text-align: flex-end;
+    }
+
+    .heading{
+        letter-spacing: 10.5px;
+        margin-top: 30px;
+    }
+
+    .cover-img{
+        width: 49vw;
+        height: 30vh;
+    }
+
+    .cover-img img{
+        width: 40vw;
+        height: auto;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .cover-title{
+        width: 10vw;
+        height: 30vh;
+    }
+
+    .cover-title img {
+        width: 7vw;
+        height: auto;
+        margin-top: 150px;
+    }
+
+    .care{
+        width: 50vw;
+        height: 25vh;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Space Mono', monospace;   
+    }
+
+    .instruction{
+        font-size: 15px;
+        letter-spacing: 6px;
+    }
+
+    .care-body{
+        font-size: 60px;
+    }
+
+    .use{
+        width: 50vw;
+        height: 25vh;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Space Mono', monospace;   
+    }
+
+    .use-head{
+        font-size: 25px;
+        margin: 20px 0;
+    }
+
+    .use-body{
+        width: 40vw;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .formula{
+        width: 70vw;
+        height: 25vh;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Space Mono', monospace;   
+    }
+
+    .formula-head{
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    .formula-body{
+        width: 60vw;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .formula-col{
+        width: 50vw;
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    .formula-use{
+        width: 30vw;
+        height: 10vw;
+
+    }
+
+    .formula-care{
+        width: 20vw;
+    }
+
+    .formula-footer{
+        width: 40vw;
+        font-size: 10px;
+        text-align: center;
+    }
