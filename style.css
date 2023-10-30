@@ -371,14 +371,15 @@ i {
 
     .formula-head{
         font-size: 25px;
-        margin-bottom: 10px;
-        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-top: 10px;
     }
 
     .formula-body{
         width: 60vw;
         font-size: 15px;
         text-align: center;
+        margin-bottom: 10px;
     }
 
     .formula-col{
@@ -390,17 +391,32 @@ i {
     }
 
     .formula-use{
-        width: 30vw;
+        width: 23vw;
         height: 10vw;
 
     }
 
     .formula-care{
-        width: 20vw;
+        width: 25vw;
+        margin-left: 30px;
     }
 
-    .formula-footer{
+    .colophon-col{
+        width: 50vw;
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+        font-family: 'Space Mono', monospace;  
+        margin-top: 20px;
+    }
+
+    .colophon{
         width: 40vw;
-        font-size: 10px;
-        text-align: center;
+        margin-right: 40px;
+    }
+
+    a{
+        font-family: 'Space Mono', monospace;  
+        text-decoration: none;
+        color: #000;
     }
