@@ -503,6 +503,71 @@ a {
   margin-right: 20%;
 }
 
+.heat {
+    display: flex;
+    justify-content: space-betweens;
+    margin-top: 6%;
+    margin-left: 5%;
+  }
+
+  .heat-img{
+    width:15%;
+    margin: 0 2%;
+  }
+
+  .stretch {
+    display: flex;
+    justify-content: center;
+  }
+
+  .stretch-img{
+    width:70%;
+    margin-bottom: 2%;
+  }
+
+  .aroundneck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aroundneck-img{
+    width:12%;
+    height: fit-content;
+    margin-bottom: 5%;
+  }
+
+  .aroundneck-img-a{
+    width:8%;
+    height: fit-content;
+    margin:2%;
+  }
+
+
+  .bandup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bandup-img{
+    width:15%;
+    height: fit-content;
+    margin-bottom: 5%;
+  }
+
+
+
+  
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   body {
     font-size: 2px;
@@ -711,17 +776,33 @@ a {
 
   }
   
-
- 
-  
-
-  
   .adbottom-img2 {
     width: 54%;
     height: fit-content;
     margin-right: 10%;
     margin-top: 5%;
   }
+
+  .heat {
+    margin-top: 20%;
+  }
+
+  .stretch-img{
+    margin-bottom: 12%;
+  }
+
+  .aroundneck-img{
+    margin-bottom: 20%;
+  }
+
+  .aroundneck-img-a{
+    margin-bottom:20%;
+  }
+
+  .bandup-img{
+    margin-bottom: 20%;
+  }
+
 
 
  
