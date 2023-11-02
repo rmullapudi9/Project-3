@@ -420,3 +420,118 @@ i {
         text-decoration: none;
         color: #000;
     }
+
+    .handwash{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .handwash-top {
+        width: 900px;
+        height: 130px;
+  
+    }
+
+    .handwash-bottom {
+        width: 900px;
+        height: 130px;
+    }
+
+    .hwtop-img1{
+        width: 170px;
+        height: auto;
+        margin: 0 20px;
+    }
+
+    .hwtop-img2{
+        width: 140px;
+        height: auto;
+        margin: 0 50px;
+    }
+
+    .hwtop-img3{
+        width: 130px;
+        height: auto;
+        margin: 15px 30px;
+    }
+
+    .hwtop-img4{
+        width: 200px;
+        height: auto;
+        margin: 0 10px;
+    }
+
+    .hwbottom-img1{
+        width: 120px;
+        height: auto;
+        margin: 0 30px 30px 30px;
+    }
+
+    .hwbottom-img2{
+        width: 150px;
+        height: auto;
+        margin: 0 30px 30px 30px;
+    }
+
+    .hwbottom-img3{
+        width: 90px;
+        height: auto;
+        margin: 0 30px 30px 30px;
+    }
+
+    .hwbottom-img4{
+        width: 110px;
+        height: auto;
+        margin: 0 30px 30px 30px;
+    }
+
+    .hwbottom-img5{
+        width: 120px;
+        height: auto;
+        margin: 0 30px 30px 0px;
+    }
+
+
+    .airdry{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .airdry-top{
+        width: 950px;
+        height: 130px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    .airdry-bottom{
+        width: 900px;
+        height: 130px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .adtop-img1{
+        width: 25%;
+        height: fit-content;
+        margin-left: 25%;
+    }
+
+    .adtop-img2{
+        width: 28%;
+        height: fit-content;
+        margin-left: 20%;
+    }
+
+    .adbottom-img1{
+        width: 25%;
+        height: fit-content;
+        margin-right: 30%;
+    }
+
+    .adbottom-img2{
+        width: 24%;
+        height: fit-content;
+        margin-right: 20%;
+    }
