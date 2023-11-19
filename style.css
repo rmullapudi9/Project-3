@@ -504,69 +504,56 @@ a {
 }
 
 .heat {
-    display: flex;
-    justify-content: space-betweens;
-    margin-top: 6%;
-    margin-left: 5%;
-  }
+  display: flex;
+  justify-content: space-betweens;
+  margin-top: 6%;
+  margin-left: 5%;
+}
 
-  .heat-img{
-    width:15%;
-    margin: 0 2%;
-  }
+.heat-img {
+  width: 15%;
+  margin: 0 2%;
+}
 
-  .stretch {
-    display: flex;
-    justify-content: center;
-  }
+.stretch {
+  display: flex;
+  justify-content: center;
+}
 
-  .stretch-img{
-    width:70%;
-    margin-bottom: 2%;
-  }
+.stretch-img {
+  width: 70%;
+  margin-bottom: 2%;
+}
 
-  .aroundneck {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.aroundneck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .aroundneck-img{
-    width:12%;
-    height: fit-content;
-    margin-bottom: 5%;
-  }
+.aroundneck-img {
+  width: 12%;
+  height: fit-content;
+  margin-bottom: 5%;
+}
 
-  .aroundneck-img-a{
-    width:8%;
-    height: fit-content;
-    margin:2%;
-  }
+.aroundneck-img-a {
+  width: 8%;
+  height: fit-content;
+  margin: 2%;
+}
 
+.bandup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .bandup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .bandup-img{
-    width:15%;
-    height: fit-content;
-    margin-bottom: 5%;
-  }
-
-
-
-  
-
-
-
-
-
-
-
-
+.bandup-img {
+  width: 15%;
+  height: fit-content;
+  margin-bottom: 5%;
+}
 
 @media screen and (max-width: 768px) {
   body {
@@ -737,7 +724,7 @@ a {
     width: 100px;
     height: auto;
   }
-  
+
   .handwash-bottom {
     width: 100px;
     height: auto;
@@ -745,11 +732,11 @@ a {
 
   .hwtop-img1,
   .hwbottom-img5 {
-    width:100%;
+    width: 100%;
   }
 
   .hwbottom-img5 {
-    margin-right:10%;
+    margin-right: 10%;
   }
 
   .hwtop-img2,
@@ -761,7 +748,7 @@ a {
   .hwbottom-img4,
   .adbottom-img1,
   .adtop-img1,
-  .adtop-img2{
+  .adtop-img2 {
     display: none;
   }
 
@@ -769,13 +756,12 @@ a {
     width: 400px;
     height: auto;
   }
-  
+
   .airdry-bottom {
     width: 400px;
     height: auto;
-
   }
-  
+
   .adbottom-img2 {
     width: 54%;
     height: fit-content;
@@ -787,26 +773,19 @@ a {
     margin-top: 20%;
   }
 
-  .stretch-img{
+  .stretch-img {
     margin-bottom: 12%;
   }
 
-  .aroundneck-img{
+  .aroundneck-img {
     margin-bottom: 20%;
   }
 
-  .aroundneck-img-a{
-    margin-bottom:20%;
-  }
-
-  .bandup-img{
+  .aroundneck-img-a {
     margin-bottom: 20%;
   }
 
-
-
- 
+  .bandup-img {
+    margin-bottom: 20%;
   }
-
-
-
+}
